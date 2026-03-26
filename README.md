@@ -1,178 +1,104 @@
 
 # 📊 GDP Analysis — Indian States
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Python-3.8%2B-blue?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Jupyter-Notebook-orange?style=for-the-badge&logo=jupyter&logoColor=white" />
-  <img src="https://img.shields.io/badge/Pandas-Data%20Analysis-green?style=for-the-badge&logo=pandas&logoColor=white" />
-  <img src="https://img.shields.io/badge/Matplotlib-Visualization-red?style=for-the-badge&logo=matplotlib&logoColor=white" />
-  <img src="https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge" />
-</p>
 
-<p align="center">
-  <b>A comprehensive data analysis project exploring the Gross Domestic Product (GDP) of Indian States — uncovering economic trends, sectoral contributions, and growth patterns.</b>
-</p>
+<div align="center">
 
----
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![Plotly](https://img.shields.io/badge/Plotly-3F4F75?style=for-the-badge&logo=plotly&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-11557C?style=for-the-badge&logo=matplotlib&logoColor=white)
 
-## 📌 Table of Contents
+**Exploring Economic Performance, Growth Trends, and Sectoral Contributions across Indian States**
 
-- [Overview](#-overview)
-- [Objectives](#-objectives)
-- [Dataset](#-dataset)
-- [Project Structure](#-project-structure)
-- [Key Analysis](#-key-analysis)
-- [Technologies Used](#-technologies-used)
-- [How to Run](#-how-to-run)
-- [Results & Insights](#-results--insights)
-- [Contributing](#-contributing)
-- [License](#-license)
+</div>
 
----
+## 📌 Project Overview
 
-## 🌐 Overview
+This project performs a comprehensive **data analysis of Gross State Domestic Product (GSDP)** of Indian states and union territories using publicly available data from **data.gov.in**.
 
-Gross Domestic Product (GDP) is one of the most important economic indicators that reflects the overall health and progress of an economy. This project dives deep into the **GSDP (Gross State Domestic Product)** data of Indian states to:
+The analysis covers the period **2013–14 to 2016–17** and focuses on:
+- Total and per capita GSDP
+- Year-over-year growth rates
+- Sector-wise contributions (Agriculture, Industry, Services)
+- Regional economic disparities
+- Identification of fastest and slowest growing states
 
-- Compare economic performance across states
-- Identify high-growth and struggling states
-- Analyze sectoral contributions (Agriculture, Industry, Services)
-- Provide data-driven recommendations for policymakers
+The project is organized into multiple Jupyter Notebooks, each addressing a specific aspect of the analysis, making the learning and exploration process step-by-step and easy to follow.
 
-> 💡 The goal is to help identify areas of focus that can foster **economic development** across India's diverse states.
+## 📁 Repository Structure
 
----
 
-## 🎯 Objectives
-
-| # | Objective |
-|---|-----------|
-| 1 | Analyze total and per capita GSDP of all Indian states |
-| 2 | Identify the fastest-growing and slowest-growing states |
-| 3 | Examine sectoral distribution (Primary / Secondary / Tertiary) |
-| 4 | Categorize states by GDP per capita and study sector-wise contributions |
-| 5 | Visualize economic trends using clear and informative plots |
-
----
-
-## 📂 Dataset
-
-The data is sourced from **[data.gov.in](https://data.gov.in/)** — the Open Government Data (OGD) platform of India.
-
-### Data Files:
-
-| File | Description |
-|------|-------------|
-| `Data I-A` | GSDP (Gross State Domestic Product) for all states and union territories |
-| `Data I-B` | Sector-wise GSDP distribution — Primary (Agriculture), Secondary (Industry), Tertiary (Services), Taxes & Subsidies |
-
-**Time Period Covered:** 2013–14 to 2016–17
-
----
-
-## 📁 Project Structure
-
-```
 GDP-Analysis/
-│
-├── 📓 GDP_Analysis.ipynb       # Main Jupyter Notebook with complete analysis
-├── 📁 data/
-│   ├── data_ia.csv             # State-wise GSDP data
-│   └── data_ib/                # Sector-wise data (one file per state)
-├── 📁 plots/                   # Exported charts and visualizations
-└── 📄 README.md                # Project documentation
-```
+├── gdp.csv                          # Main dataset
+├── 1.GDP_Analysis_WalkThrough.ipynb
+├── 2.GDP_Growth_Of_a_Country.ipynb
+├── 3.GDP_Growth_on_Whole_Dataset.ipynb
+├── 4.GDP_Plotting_Graph_using_Plotly.ipynb
+├── 5.GDP_Plotting_Graph_In_Bulks.ipynb
+├── 6.GDP_Compare_GDP_Across_Countries.ipynb
+├── 7.GDP_Comparision_Across_Countries_advance.ipynb
+├── 8.GDP_Compare_GDP_Growth_Across_Countries_advance.ipynb
+├── Plotting Graph using Plotly.ipynb
+├── README.md
+└── LICENSE
 
----
 
-## 🔍 Key Analysis
+## 🛠️ Technologies & Libraries Used
 
-### Part 1 — GDP Analysis of Indian States
+- **Python**
+- **Pandas** – Data cleaning and manipulation
+- **NumPy** – Numerical operations
+- **Matplotlib & Seaborn** – Static visualizations
+- **Plotly** – Interactive and bulk visualizations
+- **Jupyter Notebook** – Interactive development
 
-- ✅ Calculated **average growth rates** of states over 2013–14 to 2015–16
-- ✅ Compared **total GSDP** across states with ordered bar charts
-- ✅ Compared **per capita GSDP** to identify living standard differences
-- ✅ Identified **top performers** and **economically lagging** states
-- ✅ Categorized states into **4 groups** based on GDP per capita
+## 📊 Notebooks & What They Cover
 
-### Part 2 — Sectoral Contribution Analysis
+| Notebook | Description |
+|---------|-----------|
+| **1. GDP_Analysis_WalkThrough.ipynb** | Complete step-by-step walkthrough of data loading, cleaning, and initial exploration. |
+| **2. GDP_Growth_Of_a_Country.ipynb** | Calculates and visualizes GDP growth for individual states. |
+| **3. GDP_Growth_on_Whole_Dataset.ipynb** | Aggregate growth analysis across all states and years. |
+| **4 & Plotting Graph using Plotly.ipynb** | Interactive visualizations using Plotly (line charts, bar plots, etc.). |
+| **5. GDP_Plotting_Graph_In_Bulks.ipynb** | Generates multiple graphs efficiently in bulk for different states/metrics. |
+| **6. GDP_Compare_GDP_Across_Countries.ipynb** | Basic comparison of total GSDP across states with ordered bar charts. |
+| **7. GDP_Comparision_Across_Countries_advance.ipynb** | Advanced per capita GSDP analysis + categorization of states into 4 economic groups (High, Medium, Low, Very Low). |
+| **8. GDP_Compare_GDP_Growth_Across_Countries_advance.ipynb** | Advanced growth rate comparison to identify top and bottom performers. |
 
-- ✅ Analyzed which sectors (**Agriculture / Industry / Services**) dominate each category
-- ✅ Compared sector-wise contributions for different GDP tiers
-- ✅ Identified economic structural differences between rich and poor states
+## 🔍 Key Insights
 
----
+### 1. Growth Performance
+- **Fastest growing states**: Telangana, Andhra Pradesh, and Gujarat showed consistently high GSDP growth.
+- **Slowest growing states**: Several Northeastern states and smaller economies lagged behind in growth.
 
-## 🛠️ Technologies Used
+### 2. Economic Structure & Per Capita Income
+- States with higher dependence on the **Primary sector (Agriculture)** generally have **lower per capita GSDP**.
+- States dominated by the **Tertiary (Services)** and **Secondary (Industry)** sectors exhibit significantly **higher per capita income** and better economic performance.
 
-| Library | Purpose |
-|---------|---------|
-| `Python 3.8+` | Core programming language |
-| `Pandas` | Data manipulation and cleaning |
-| `NumPy` | Numerical computations |
-| `Matplotlib` | Static data visualizations |
-| `Seaborn` | Enhanced statistical plots |
-| `Jupyter Notebook` | Interactive analysis environment |
+### 3. Regional Disparities
+- There is a clear divide between economically advanced and lagging states.
+- The economic structure varies widely — richer states rely more on services, while poorer states remain heavily dependent on agriculture.
 
----
+### 4. Policy Relevance
+The analysis highlights the need for targeted policy interventions to:
+- Reduce regional economic disparities
+- Promote structural transformation (shift from agriculture to industry & services)
+- Support underperforming states through focused development programs
 
-## 🚀 How to Run
+## 📈 Visualizations
 
-### 1. Clone the Repository
+The project includes:
+- Interactive Plotly charts
+- Comparative bar charts (total GSDP & per capita)
+- Growth trend line plots
+- Bulk visualizations for multiple states
+- Categorized analysis plots (states grouped by economic performance)
 
-```bash
-git clone https://github.com/Sumitsharma12321/GDP-Analysis.git
-cd GDP-Analysis
-```
+📄 Data Source
 
-### 2. Install Dependencies
+Source: Kaggle
+Datasets Used: gdp.csv
 
-```bash
-pip install pandas numpy matplotlib seaborn jupyter
-```
-
-### 3. Launch the Notebook
-
-```bash
-jupyter notebook GDP_Analysis.ipynb
-```
-
-> Make sure your data files are placed in the correct directories as shown in the project structure above.
-
----
-
-## 📈 Results & Insights
-
-Here are some of the key findings from the analysis:
-
-- 🏆 **Fastest Growing States:** States like Telangana, Andhra Pradesh, and Gujarat showed consistently high GSDP growth rates.
-- 📉 **Struggling States:** Some northeastern and smaller states showed lower and inconsistent growth.
-- 🌾 **Agriculture-heavy states** showed lower per capita GSDP compared to states dominated by **Services and Industry**.
-- 🏙️ States with a strong **tertiary (services) sector** tend to have significantly higher per capita income.
-- 📊 A clear **economic disparity** exists between high-income and low-income states, indicating the need for targeted policy intervention.
-
----
-
-## 🤝 Contributing
-
-Contributions are welcome! If you'd like to improve the analysis or add new features:
-
-1. Fork the repository
-2. Create a new branch (`git checkout -b feature/your-feature`)
-3. Commit your changes (`git commit -m 'Add some feature'`)
-4. Push to the branch (`git push origin feature/your-feature`)
-5. Open a Pull Request
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** — feel free to use, modify, and distribute.
-
----
-
-<p align="center">
-  Made with ❤️ by <a href="https://github.com/Sumitsharma12321"><b>Sumit Sharma</b></a>
-  <br/>
-  ⭐ If you found this project helpful, please give it a star!
-</p>
+📜 License
+This project is licensed under the MIT License – see the LICENSE file for details.
